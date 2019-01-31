@@ -1,0 +1,15 @@
+
+.navBar{
+    padding: 1.5em 1em;
+    background-color: #ffffff;
+}
+.topNav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+}
+.topNav a{
+    padding-left: 4em;
+    color: #000000;
+}
