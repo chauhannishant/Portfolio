@@ -1,0 +1,10 @@
+.mainProj{
+    display: flex;
+    justify-content: space-evenly;
+}
+.projText{
+    flex-grow: 2;
+}
+.projImg{
+
+}
