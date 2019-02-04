@@ -631,3 +631,16 @@ pre tt:after {
   display: flex;
   justify-content: flex-end;
 }
+.heroCont{
+  text-align: center;
+  padding: 2em 4em;
+}
+.heroCont p{
+  line-height: 2em;
+}
+.heroCont h1{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.mainCont{
+  min-height: 80vh;
+}

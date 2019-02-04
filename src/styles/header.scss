@@ -1,12 +1,15 @@
 
 .navBar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 80px;
     padding: 1.5em 1em;
     background-color: #ffffff;
 }
 .topNav{
     display: flex;
     justify-content: flex-end;
-    align-items: center;
     list-style-type: none;
 }
 .topNav a{

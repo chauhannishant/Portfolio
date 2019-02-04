@@ -19,7 +19,7 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div className="maxWidth marginAuto"
+        <div className="mainCont maxWidth marginAuto"
         >
           {children}
         </div>
