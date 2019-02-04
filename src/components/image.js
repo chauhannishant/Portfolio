@@ -28,5 +28,6 @@ const Image = () => (
     `}
     render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
   />
+  //sdfsdf
 )
 export default Image
