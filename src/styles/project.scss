@@ -1,0 +1,16 @@
+.mainProj{
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    padding: 5% 0;
+  }
+  .projText{
+    padding: 4% 5%;
+  }
+  .projImg{
+    height: 100%;
+  }
+  .mainProj:nth-of-type(even){
+    flex-direction: row-reverse;
+    text-align: right;
+  }

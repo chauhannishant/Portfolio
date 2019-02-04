@@ -15,4 +15,11 @@
 .topNav a{
     padding-left: 4em;
     color: #000000;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+.topNav a:hover{
+    color: #9f9f9f;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
 }

@@ -1,5 +1,6 @@
 @import '../styles/header.scss';
 @import '../styles/util.scss';
+@import '../styles/project.scss';
 
 
 html {
@@ -630,10 +631,11 @@ pre tt:after {
 .footer{
   display: flex;
   justify-content: flex-end;
+  font-size: 0.813em;
 }
 .heroCont{
   text-align: center;
-  padding: 2em 4em;
+  padding: 5% 10%;
 }
 .heroCont p{
   line-height: 2em;
