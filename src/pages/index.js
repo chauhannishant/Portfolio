@@ -34,6 +34,10 @@ const IndexPage = () => (
       <h3>HeroProj Title 5</h3>
       <p>Brief explanation on what we set out to do and what was the main challenge on the outset. Brief explanation on what we set out to do and what was the main challenge on the outset.</p>
     </HeroProj>
+
+    <div className="divider marginAuto"></div>
+    
+    <h2 className="cardTitle">Other Randomness</h2>
     <div className="cardStack" >
       <Card imageName="/srp-thumb.png" alt="SRP Thumbnail">
         <h4>Project Title 1</h4>

@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-import icon32 from '../../static/nishant.png'
+import icon32 from '../images/nishant-favicon.png'
 
 function SEO({ description, lang, meta, keywords, title }) {
   return (

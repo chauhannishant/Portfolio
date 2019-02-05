@@ -627,6 +627,7 @@ pre tt:after {
   display: flex;
   justify-content: flex-end;
   font-size: 0.813em;
+  margin-top: 3rem;
 }
 .heroCont{
   text-align: center;
@@ -641,9 +642,18 @@ pre tt:after {
 .mainCont{
   min-height: 90vh;
 }
+.divider{
+  max-width: 460px;
+  border-bottom: 1px solid #eaeaea;
+}
 .cardStack{
   display: flex;
-  justify-content: space-around;
-  padding-top: 50px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.cardTitle{
+  padding-top: 3rem;
+  text-align: center;
 }
 
