@@ -2,7 +2,7 @@ import React from 'react'
 import {withPrefix} from 'gatsby'
 
 
-const Project = (props) => (
+const HeroProj = (props) => (
     <div className="mainProj">
         <img className="projImg" alt={props.alt} src={withPrefix(props.imageName)}/>
         <div className="projText">
@@ -11,4 +11,4 @@ const Project = (props) => (
     </div>
 )
 
-export default Project
+export default HeroProj

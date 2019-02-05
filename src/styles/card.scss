@@ -1,0 +1,11 @@
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    width: 280px;
+    height: 320px;
+    align-content: flex-start;
+    justify-content: center;
+  }
+  .cardImg{
+    padding: 10px;
+  }

@@ -1,11 +1,10 @@
 .mainProj{
     display: flex;
     justify-content: space-between;
-    /* flex-wrap: wrap; */
     padding: 5% 0;
   }
   .projText{
-    padding: 4% 5%;
+    padding: 2.5% 5%;
   }
   .projImg{
     height: 100%;
@@ -14,3 +13,12 @@
     flex-direction: row-reverse;
     text-align: right;
   }
+
+@media (max-width: 480px){
+  .mainProj{
+    flex-wrap: wrap;
+  }
+  .projText{
+    text-align: center;
+  }
+}

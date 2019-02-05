@@ -4,7 +4,8 @@ import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Project from '../components/project'
+import HeroProj from '../components/hero-proj'
+import Card from '../components/card'
 
 const IndexPage = () => (
   <Layout>
@@ -13,26 +14,37 @@ const IndexPage = () => (
       <h1>Hello, I am Nishant</h1>
       <p>I am a digital product designer with a focus on User Experience. I am passionate about learning new things & belive a designer in isolation starts to rot. I have learnt a lot from my teams in the past and gained the skills to build this portfolio with help from my team at Cleartrip.</p>
     </div>
-    <Project className="oddProj" imageName="/srp-thumb.png" alt="SRP Thumbnail">
-      <h3>Project Title 1</h3>
+    <HeroProj imageName="/srp-thumb.png" alt="SRP Thumbnail">
+      <h3>HeroProj Title 1</h3>
       <p>Brief explanation on what we set out to do and what was the main challenge on the outset. Brief explanation on what we set out to do and what was the main challenge on the outset.</p>
-    </Project>
-    <Project imageName="/srp-thumb.png" alt="SRP Thumbnail">
-      <h3>Project Title 2</h3>
+    </HeroProj>
+    <HeroProj imageName="/srp-thumb.png" alt="SRP Thumbnail">
+      <h3>HeroProj Title 2</h3>
       <p>Brief explanation on what we set out to do and what was the main challenge on the outset. Brief explanation on what we set out to do and what was the main challenge on the outset.</p>
-    </Project>
-    <Project className="oddProj" imageName="/srp-thumb.png" alt="SRP Thumbnail">
-      <h3>Project Title 3</h3>
+    </HeroProj>
+    <HeroProj imageName="/srp-thumb.png" alt="SRP Thumbnail">
+      <h3>HeroProj Title 3</h3>
       <p>Brief explanation on what we set out to do and what was the main challenge on the outset. Brief explanation on what we set out to do and what was the main challenge on the outset.</p>
-    </Project>
-    <Project imageName="/srp-thumb.png" alt="SRP Thumbnail">
-      <h3>Project Title 4</h3>
+    </HeroProj>
+    <HeroProj imageName="/srp-thumb.png" alt="SRP Thumbnail">
+      <h3>HeroProj Title 4</h3>
       <p>Brief explanation on what we set out to do and what was the main challenge on the outset. Brief explanation on what we set out to do and what was the main challenge on the outset.</p>
-    </Project>
-    <Project className="oddProj" imageName="/srp-thumb.png" alt="SRP Thumbnail">
-      <h3>Project Title 5</h3>
+    </HeroProj>
+    <HeroProj imageName="/srp-thumb.png" alt="SRP Thumbnail">
+      <h3>HeroProj Title 5</h3>
       <p>Brief explanation on what we set out to do and what was the main challenge on the outset. Brief explanation on what we set out to do and what was the main challenge on the outset.</p>
-    </Project>
+    </HeroProj>
+    <div className="cardStack" >
+      <Card imageName="/srp-thumb.png" alt="SRP Thumbnail">
+        <h4>Project Title 1</h4>
+      </Card>
+      <Card imageName="/srp-thumb.png" alt="SRP Thumbnail">
+        <h4>Project Title 2</h4>
+      </Card>
+      <Card imageName="/srp-thumb.png" alt="SRP Thumbnail">
+        <h4>Project Title 3</h4>
+      </Card>
+    </div>
 </Layout>
 )
 
