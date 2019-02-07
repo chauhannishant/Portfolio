@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-import icon32 from '../images/nishant-favicon.png'
+import Icon32 from '../icons/nishant-favicon.png'
 
 function SEO({ description, lang, meta, keywords, title }) {
   return (
@@ -16,9 +16,6 @@ function SEO({ description, lang, meta, keywords, title }) {
             htmlAttributes={{
               lang,
             }}
-            link={[
-              { rel: 'shortcut icon', type: 'image/png', href: `${icon32}` }
-              ]}
             title={title}
             titleTemplate={`%s | ${data.site.siteMetadata.title}`}
             meta={[
@@ -64,6 +61,10 @@ function SEO({ description, lang, meta, keywords, title }) {
                   : []
               )
               .concat(meta)}
+          link={[
+          {rel: 'shortcut icon', type: 'image/png', href: `${Icon32}`}
+          ]}
+          
           />
         )
       }}

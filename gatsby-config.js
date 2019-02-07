@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Product Designer & Calligrapher`,
-    description: `Portfolio website for nishant chauhan built on gatsby & react`,
+    description: `Portfolio website for Nishant Chauhan built on gatsby & react`,
     author: `@gatsbyjs`,
   },
   plugins: [

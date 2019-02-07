@@ -626,24 +626,27 @@ pre tt:after {
 .footer{
   display: flex;
   justify-content: flex-end;
-  font-size: 0.813em;
+  font-size: 0.625em;
+  font-weight: 100;
+  color: #cacaca;
   margin-top: 3rem;
 }
 .heroCont{
   text-align: center;
-  padding: 10% 10%;
+  margin: 10% 10%;
 }
 .heroCont p{
-  line-height: 2em;
+  line-height: 2.25em;
 }
 .heroCont h1{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: .5em;
 }
 .mainCont{
   min-height: 90vh;
 }
 .divider{
-  max-width: 460px;
+  margin: 0 20%;
   border-bottom: 1px solid #eaeaea;
 }
 .cardStack{

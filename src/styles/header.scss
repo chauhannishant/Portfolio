@@ -1,25 +1,60 @@
-
 .navBar{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    height: 80px;
+    height: 60px;
     padding: 1.5em 1em;
     background-color: #ffffff;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    right: 0;
+    /* box-shadow: 0 10px 15px -10px #fafafa; shadow for scroll. need to figure out how to make it appear only on scroll. */
 }
 .topNav{
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
-}
+}    
 .topNav a{
-    padding-left: 4em;
-    color: #000000;
-    transition-duration: 0.5s;
-    transition-timing-function: ease;
+        padding-left: 4em;
+        color: #000000;
+        transition: color 0.5s ease;
 }
 .topNav a:hover{
     color: #9f9f9f;
-    transition-duration: 0.5s;
-    transition-timing-function: ease;
+    transition: color 0.5s ease;
+}
+.navMobile{
+    display: none;
+}
+
+@media (max-width:480px){
+    .navBar{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+        height: auto;
+        min-height: 60px;
+        padding: 0 15px;
+    }
+    .navMobile{
+        display: flex;
+        min-height: 60px;
+        align-items: center;
+    }
+    .topNav{
+        display: none;
+    }
+    .topNav a{
+        padding-left: 0;
+    }
+    .active{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+        height: 150px;
+    }
 }

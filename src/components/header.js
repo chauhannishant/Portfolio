@@ -4,15 +4,44 @@ import React from 'react'
 
 
 
-const Header = () => (
-    <div className="navBar marginAuto maxWidth ">
-        <ul className="topNav noMargin">
-          <li className="noMargin"> <a href="" className="noDec">Work</a> </li>
-          <li className="noMargin"> <a href="" className="noDec">About</a> </li>
-          <li className="noMargin"> <a href="" className="noDec">Contact</a> </li>
-        </ul>
-    </div>
-)
+class Header extends React.Component {
+    constructor(props) {
+        super(props)
+        
+            this.state = {
+                classNameToggle: 'topNav',
+                isActive: false,
+            }
+        }
+        
+    toggle = () => {
+        this.setState({ isActive: !this.state.isActive }, () => {
+            if (this.state.isActive) {
+                this.setState({ classNameToggle: 'noMargin topNav active' })
+            } 
+            else {
+                this.setState({ classNameToggle: 'noMargin topNav' })
+            }
+        })
+    }
+    render () {
+        return (
+            <div className="navBar marginAuto maxWidth">
+                <a className="noMargin navMobile"  onClick={this.toggle}>Menu</a>
+                <ul className={this.state.classNameToggle}>
+                    <li className="noMargin "> <a href="" className="noDec">Work</a> </li>
+                    <li className="noMargin "> <a href="" className="noDec">About</a> </li>
+                    <li className="noMargin "> <a href="" className="noDec">Contact</a> </li>
+                </ul>
+            </div>
+        )
+    }
+}
 
-
+Header.propTypes = {
+    siteTitle: PropTypes.string,
+}
+Header.defaultProps = {
+    siteTitle: ``,
+}
 export default Header

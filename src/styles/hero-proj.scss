@@ -1,7 +1,7 @@
 .mainProj{
     display: flex;
     justify-content: space-between;
-    padding: 5% 0;
+    margin: 5% 0;
   }
   .projText{
     padding: 2.5% 5%;
@@ -17,6 +17,7 @@
 @media (max-width: 480px){
   .mainProj{
     flex-wrap: wrap;
+    justify-content: center;
   }
   .projText{
     text-align: center;
