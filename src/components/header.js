@@ -1,16 +1,17 @@
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
-import icBurger from '../icons/ic-burger.svg'
-import icCross from '../icons/ic-cross.svg'
+import icWork from '../icons/ic-work.svg'
+import icPerson from '../icons/ic-person.svg'
+import icContact from '../icons/ic-contact.svg'
 
 
-class Header extends React.Component {
+/*class Header extends React.Component {
     constructor(props) {
         super(props)
         
             this.state = {
-                classNameToggle: 'topNav',
+                classNameToggle: 'topNav noMargin',
                 srcToggle: icBurger,
                 isActive: false,
             }
@@ -19,11 +20,11 @@ class Header extends React.Component {
     toggle = () => {
         this.setState({ isActive: !this.state.isActive }, () => {
             if (this.state.isActive) {
-                this.setState({ classNameToggle: 'topNav active' })
+                this.setState({ classNameToggle: 'noMargin topNav active' })
                 this.setState({ srcToggle: icCross })
             } 
             else {
-                this.setState({ classNameToggle: 'topNav' })
+                this.setState({ classNameToggle: 'noMargin topNav' })
                 this.setState({ srcToggle: icBurger })
             }
         })
@@ -31,11 +32,11 @@ class Header extends React.Component {
     render () {
         return (
             <div className="navBar marginAuto maxWidth">
-                <a className="noMargin navMobile" onClick={this.toggle}><img className="noMargin" src={this.state.srcToggle} alt="Menu" width="32px" height="32px" /></a>
-                <ul className={this.state.classNameToggle}>
-                    <li className="noMargin "> <a href="" className="noDec">Work</a> </li>
-                    <li className="noMargin "> <a href="" className="noDec">About</a> </li>
-                    <li className="noMargin "> <a href="" className="noDec">Contact</a> </li>
+                <a className="noMargin navMobile" onClick={this.toggle}><img className=" noMargin" src={this.state.srcToggle} alt="Menu" width="28px" height="28px" /></a>
+                <ul className="noMargin topNav">
+                    <li className="noMargin "> <Link to="/" className="noDec"><img className="menuIcon" src={icWork} alt="Work"/>Work</Link> </li>
+                    <li className="noMargin "> <Link to="/" className="noDec"><img className="menuIcon" src={icPerson} alt="Personal"/>About</Link> </li>
+                    <li className="noMargin "> <Link to="/contact" className="noDec"><img className="menuIcon" src={icContact} alt="Contact"/>Contact</Link> </li>
                 </ul>
             </div>
         )
@@ -47,5 +48,18 @@ Header.propTypes = {
 }
 Header.defaultProps = {
     siteTitle: ``,
-}
+}*/
+
+
+const Header = () =>(
+    <div className="navBar marginAuto maxWidth">
+        <ul className="noMargin topNav">
+            <li className="noMargin "> <Link to="/" className="noDec menuLinks"><img className="menuIcon" src={icWork} alt="Work" width="40px" height="40px"/>Work</Link> </li>
+            <li className="noMargin "> <Link to="/" className="noDec menuLinks"><img className="menuIcon" src={icPerson} alt="Personal" width="40px" height="40px"/>About</Link> </li>
+            <li className="noMargin "> <Link to="/contact" className="noDec menuLinks"><img className="menuIcon" src={icContact} alt="Contact" width="40px" height="40px"/>Contact</Link> </li>
+        </ul>
+    </div>
+)
+
+
 export default Header

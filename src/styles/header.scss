@@ -3,62 +3,64 @@
     align-items: center;
     justify-content: flex-end;
     height: 60px;
-    padding: 1.5em 1em;
     background-color: #ffffff;
     position: sticky;
-    position: -webkit-sticky;
     top: 0;
     right: 0;
     /* box-shadow: 0 10px 15px -10px #fafafa; shadow for scroll. need to figure out how to make it appear only on scroll. */
 }
 .topNav{
     display: flex;
-    justify-content: flex-end;
     list-style-type: none;
 }    
-.topNav a{
+.topNav:last-child{
+   padding-right: 20px;
+}
+.menuLinks{
     padding-left: 4em;
     color: #000000;
     transition: color 0.5s ease;
 }
-.topNav a:hover{
+.menuLinks:hover{
     color: #9f9f9f;
     transition: color 0.5s ease;
 }
-.navMobile{
+.menuIcon{
     display: none;
 }
 
 @media (max-width:480px){
     .navBar{
         display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: stretch;
-        height: auto;
-        min-height: 60px;
-        padding: 0 15px;
-        box-shadow: 0 2px 1px #fafafa;
-    }
-    .navMobile{
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        min-height: 60px;
-        margin: 0;
+        position: fixed;
+        bottom: 0;
+        top: unset;
+        justify-content: space-around;
+        height: 60px;
+        width: 100%;
     }
     .topNav{
-        display: none;
-    }
-    .topNav a{
-        padding-left: 0;
-    }
-    .active{
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 180px;
-        font-size: 1.25em;
+        width: 100%;
+        justify-content: space-around;
     }
-}
+    .topNav:last-child{
+        padding: 0;
+    }
+    .topNav li{
+        display: flex;
+    }
+    .menuIcon{
+        display: flex;
+        margin: 0;
+    }
+    .menuLinks{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        font-size: 9px;
+        line-height: 12px;
+        padding: 0;
+    }
+}    
