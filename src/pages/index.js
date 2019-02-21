@@ -10,7 +10,7 @@ import Card from '../components/card'
 const IndexPage = () => (
   <Layout>
     <SEO title="Nishant" keywords={[`gatsby`, `application`, `react`]} />
-    <div className="heroCont marginAuto">
+    <div className="heroCont mg-0-Auto">
       <h1>Hello, I am Nishant</h1>
       <p>I am a digital product designer with a focus on User Experience. I am passionate about learning new things & belive a designer in isolation starts to rot. I have learnt a lot from my teams in the past and gained the skills to build this portfolio with help from my team at Cleartrip.</p>
     </div>
@@ -35,7 +35,7 @@ const IndexPage = () => (
       <p>Brief explanation on what we set out to do and what was the main challenge on the outset. Brief explanation on what we set out to do and what was the main challenge on the outset.</p>
     </HeroProj>
 
-    <div className="divider marginAuto"></div>
+    <div className="divider mg-0-Auto"></div>
     
     <h2 className="cardTitle">Other Randomness</h2>
     <div className="cardStack" >

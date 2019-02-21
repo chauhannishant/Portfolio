@@ -1,18 +1,20 @@
 .mainProj{
-    display: flex;
     justify-content: space-between;
     margin: 5% 0;
-  }
-  .projText{
+}
+.mainProj:first-of-type{
+  margin-top: 55%;
+}
+.projText{
     padding: 2.5% 5%;
-  }
-  .projImg{
+}
+.projImg{
     height: 100%;
-  }
-  .mainProj:nth-of-type(even){
+}
+.mainProj:nth-of-type(even){
     flex-direction: row-reverse;
     text-align: right;
-  }
+}
 
 @media (max-width: 480px){
   .mainProj{

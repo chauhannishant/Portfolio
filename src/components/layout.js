@@ -19,11 +19,11 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div className="mainCont maxWidth marginAuto"
+        <div className="mainCont mxWid mg-0-Auto"
         >
           {children}
         </div>
-        <footer className="footer maxWidth marginAuto">
+        <footer className="footer flx mxWid mg-0-Auto fs-12">
            <span>© {new Date().getFullYear()} Nishant Chauhan</span> 
         </footer>
       </>

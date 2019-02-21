@@ -3,7 +3,7 @@ import {withPrefix} from 'gatsby'
 
 
 const HeroProj = (props) => (
-    <div className="mainProj">
+    <div className="mainProj flx">
         <img className="projImg" alt={props.alt} src={withPrefix(props.imageName)}/>
         <div className="projText">
             {props.children}

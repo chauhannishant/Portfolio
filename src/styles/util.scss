@@ -1,12 +1,18 @@
-.maxWidth{
+.flx{
+	display: -webkit-flex;
+	display: flex;
+}
+
+
+.mxWid{
 	max-width: 960px;
 }
-.noMargin{
+.mg-0{
 	margin: 0;
+}
+.mg-0-Auto{
+	margin: 0 auto;
 }
 .noDec{
 	text-decoration: none;
-}
-.marginAuto{
-	margin: 0 auto;
 }
