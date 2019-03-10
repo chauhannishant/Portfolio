@@ -1,8 +1,9 @@
-@import '../styles/header.scss';
+@import '../styles/flex.scss';
 @import '../styles/util.scss';
 @import '../styles/hero-proj.scss';
 @import '../styles/card.scss';
-@import '../styles/typography.scss'
+@import '../styles/typography.scss';
+@import '../styles/header.scss';
 
 html {
   font-family: sans-serif;
@@ -650,7 +651,6 @@ pre tt:after {
   border-bottom: 1px solid #eaeaea;
 }
 .cardStack{
-  display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-content: center;

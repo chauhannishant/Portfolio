@@ -38,7 +38,7 @@ const IndexPage = () => (
     <div className="divider mg-0-Auto"></div>
     
     <h2 className="cardTitle">Other Randomness</h2>
-    <div className="cardStack" >
+    <div className="flx cardStack" >
       <Card imageName="/srp-thumb.png" alt="SRP Thumbnail">
         <h4>Project Title 1</h4>
       </Card>

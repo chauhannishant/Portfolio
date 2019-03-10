@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import Icon32 from '../icons/nishant-favicon.png'
 
+
 function SEO({ description, lang, meta, keywords, title }) {
   return (
     <StaticQuery
@@ -60,11 +61,11 @@ function SEO({ description, lang, meta, keywords, title }) {
                     }
                   : []
               )
-              .concat(meta)}
-          link={[
-          {rel: 'shortcut icon', type: 'image/png', href: `${Icon32}`}
-          ]}
-          
+              .concat(meta)
+            }
+            link={[
+              {rel: 'shortcut icon', type: 'image/png', href: `${Icon32}`}
+            ]}
           />
         )
       }}
